@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<style>
+			.wb-form-div {
+				margin-top: 30px;
+			}
+			
+			.wb-span {
+				float: left;
+				width: 70px;
+			}
+			
+			.wb-div {
+				margin-top: 25%;
+				float: left;
+				width: 25%;
+			}
+			
+			.wb-div-left {
+				margin-left: 30%;
+			}
+			
+			.wb-div-right {
+				height: 200px;
+				margin-left: 12%;
+			}
+			
+			.wb-input-text {
+				width: 54%;
+			}
+			
+			.wb-input-submit {
+				width: 55%;
+				margin-left: 21%;
+			}
+		</style>
+	</head>
+	<body background="img/login.jpg">
+		<div class="wb-div wb-div-left">
+			<h2>系统</h2>
+		</div>
+		<div class="wb-div wb-div-right">
+			<form>
+				<div class="wb-form-div">
+					<span class="wb-span">用户名称:</span>
+					<input type="text" id="user-name" class="wb-input-text" />
+				</div>
+				<div class="wb-form-div">
+					<span class="wb-span">用户密码:</span>
+					<input type="password" id="user-pwd" class="wb-input-text" />
+				</div>
+				<div style="margin-left: 20%;">
+					<input type="checkbox" name="checkbox" id="checkbox" />
+					<span style="font-size: 12px;">显示密码</span>
+				</div>
+
+				<div class="wb-form-div">
+					<input type="submit" value="登录" class="wb-input-submit" />
+				</div>
+			</form>
+		</div>
+		<script src="js/layui/layui.js"></script>
+		<script>
+			layui.use(['form','jquery','layer'], function() {
+				var form = layui.form,$=layui.jquery,layer=layui.layer;
+				//登录
+				$('.wb-input-submit').click(function() {
+						var name = $('#user-name').val();
+						if(name == null || name == "") {
+							layer.msg("请输入用户名");
+							return false;
+						}
+						var pwd = $('#user-pwd').val();
+						if(pwd == null || pwd == "") {
+							layer.msg("请输入密码！");
+							return false;
+						}
+						return false;
+					})
+					//显示密码
+				$('#checkbox').click(function() {
+					if($(this).is(':checked')) {
+						$('#user-pwd').attr('type', 'text');
+					} else {
+						$('#user-pwd').attr('type', 'password');
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>
