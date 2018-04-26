@@ -1,0 +1,190 @@
+.layui-layout-admin .layui-header{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)!important;;
+    background-color: #33aecc!important;
+}
+.layui-layout-admin .layui-side {
+    position: fixed;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 200px;
+    width: 200px;
+    z-index: 999;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: #c2c2c2;
+    overflow-x: hidden;
+}
+.layui-side .layui-nav .layui-nav-header {
+    height: 45px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 200px;
+    color: #333;
+}
+.layui-side .layui-nav .layui-nav-item > a {
+    border-bottom: 1px solid #e5e5e5;
+    color: #333;
+}
+.layui-side .layui-nav .layui-nav-item > dl dd.layui-this {
+    background-color: #f2f2f2 !important;
+}
+.layui-side .layui-nav .layui-nav-item > dl dd:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 22px;
+    border-left: 1px solid #e2e2e2;
+}
+.layui-side .layui-nav .layui-nav-item > dl dd.layui-this a, .layui-side .layui-nav .layui-nav-item > dl dd.layui-this a:hover {
+    background-color: #f2f2f2 !important;
+    color: #333 !important;
+}
+
+.layui-side .layui-nav .layui-nav-item > dl dd a {
+    padding: 0 20px 0 30px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff !important;
+    color: #333;
+}
+
+.layui-side .layui-nav .layui-nav-item > dl dd.layui-this a:before {
+    border-color: #33aecc;
+    background-color: #33aecc !important;
+}
+
+.layui-side .layui-nav .layui-nav-item > dl dd a:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+}
+.layui-side .layui-nav .layui-nav-itemed > a .layui-nav-more {
+    border-color: transparent transparent #fff !important;
+}
+.layui-nav-itemed>a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover {
+    background-color: #33aecc!important;
+    color: #fff!important;
+}
+.layui-nav-tree .layui-nav-item a:hover {
+    background-color: #f2f2f2 !important;
+}
+
+.layui-nav-tree .layui-nav-itemed a:hover{
+    background: #33aecc!important;
+}
+.layui-layout-admin .layui-body {
+    position: absolute;
+    top:65px;
+    /*bottom: 30px;*/
+    left: 200px;
+    right: 0;
+    z-index: 0;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.layui-body .layui-tab .layui-tab-title {
+    padding: 0 10px;
+    z-index: 990;
+}
+
+.gal-panel{
+    margin-right: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+}
+.gal-panel-header{
+    height: 42px;
+    background-color: #f2f2f2;
+}
+.gal-panel-title{
+    position: relative;
+    line-height: 42px;
+    padding: 0 15px 0 35px;
+    color: #333;
+
+}
+.gal-panel-body{
+    border-top: 1px solid #e2e2e2;
+    color: #666;
+}
+table{
+    margin: 0 0!important;
+}
+table>tbody>tr>td:first-child{
+    border-left: 0;
+}
+table>thead>tr:nth-child(1) th{
+     border-left: 0;
+     border-top: 0;
+ }
+
+table>thead>tr>th:last-child{
+  border-right: 0;
+}
+
+table>tbody>tr:last-child td{
+    border-bottom: 0;
+}
+.layui-bg-black{
+    background-color: #ffffff!important;
+}
+.layui-form-label{
+	width: 10%;
+}
+.layui-btn{
+	width: 120px;
+}
+.ie-box-shadow{
+	filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=5);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(pixelradius=5)";
+    background-color: #444\9;
+    position: absolute;
+    left: 0;
+    width: 200px\9;
+    height: 100%\9;
+    z-index: 99;
+}
+
+.navBar{
+	margin-top:20px;
+}
+.layui-nav-bar{
+	top: 157.5px; height: 0px; opacity: 0;
+}
+.layui-show{
+	margin-top: 20px;padding-left: 10px;
+}
+.layui-form-div{
+	text-align: right;
+}
+.layui-form-div div{
+	margin-right: 10px;
+}
+.layui-input-bottom{
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+.layui-form-label-new{
+	width: 15%;
+}
+.layui-select-title input{
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+.layui-system-para-item{
+	margin-top: 30px;
+    margin-bottom: 30px;
+}

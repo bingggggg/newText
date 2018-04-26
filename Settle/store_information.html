@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>结算系统</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<link rel="stylesheet" href="layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="css/se_main.css" />
+		<link rel="stylesheet" href="css/se_common.css" />
+	</head>
+
+	<body>
+		<div>
+			<form class="layui-form" action="">
+				<div class="layui-form-item" style="margin-top: 25px;">
+					<label class="layui-form-label layui-form-label-new">商铺姓名</label>
+					<div class="layui-input-inline">
+						<input type="password" name="password" disabled class="layui-input layui-input-bottom">
+					</div>
+					<label class="layui-form-label layui-form-label-new">收款人姓名</label>
+					<div class="layui-input-inline">
+						<input type="password" name="password" lay-verify="required" class="layui-input layui-input-bottom">
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-top: 25px;">
+					<label class="layui-form-label layui-form-label-new">收款人证件号</label>
+					<div class="layui-input-inline">
+						<input type="password" name="password" lay-verify="required" class="layui-input layui-input-bottom">
+					</div>
+					<label class="layui-form-label layui-form-label-new">收款人证件类型</label>
+					<div class="layui-input-inline">
+						<select name="city" lay-verify="" layui-input-bottom>
+							<option value="010">身份证</option>
+							<option value="021">临时身份证</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-top: 25px;">
+					<label class="layui-form-label layui-form-label-new">收款人国籍</label>
+					<div class="layui-input-inline">
+						<select name="city" lay-verify="" layui-input-bottom>
+							<option value="010">中国</option>
+							<option value="021">越南</option>
+						</select>
+					</div>
+					<label class="layui-form-label layui-form-label-new">收款人银行账号</label>
+					<div class="layui-input-inline">
+						<input type="password" name="password" lay-verify="required" class="layui-input layui-input-bottom">
+					</div>
+				</div>
+				<div class="layui-form-item" style="margin-top: 25px;">
+					<label class="layui-form-label layui-form-label-new">收款人开户行号</label>
+					<div class="layui-input-inline">
+						<input type="password" name="password" class="layui-input layui-input-bottom">
+					</div>
+					<label class="layui-form-label layui-form-label-new">所属口岸</label>
+					<div class="layui-input-inline">
+						<input type="password" name="password" disabled class="layui-input layui-input-bottom">
+					</div>
+				</div>
+				<div class="layui-form-item" style="float: right;margin-right: 20px;margin-top: 25px;">
+					<div class="layui-input-block">
+						<button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">保存</button>
+						<button type="reset" class="layui-btn layui-btn-primary">返回</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script type="text/javascript" src="js/se_common.js"></script>
+	</body>
+
+</html>
